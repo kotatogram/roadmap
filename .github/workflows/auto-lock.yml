@@ -1,0 +1,18 @@
+name: Auto-lock issues
+on:
+  issues:
+    types: opened
+
+jobs:
+  lock:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Lock current issue
+        uses: actions/github-script@v3
+        with:
+          script: |
+            github.issues.lock({
+              context.repo.owner,
+              context.repo.repo,
+              context.issue.number
+            });
