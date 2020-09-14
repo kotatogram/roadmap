@@ -10,6 +10,7 @@ jobs:
       - name: Lock current issue
         uses: actions/github-script@v3
         with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
             github.issues.lock({
               context.repo.owner,
