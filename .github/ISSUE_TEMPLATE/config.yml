@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Main Kotatogram repo
+    url: https://github.com/kotatogram/kotatogram-desktop
+    about: You can create a new issue about this roadmap here.
+  - name: English Kotatogram chat
+    url: https://t.me/kotatochat
+    about: Talk about roadmap or report an issue here.
+  - name: Русский чат Котатограма
+    url: https://t.me/kotatochat_ru
+    about: Здесь можно обсудить планы или сообщить о проблеме.
